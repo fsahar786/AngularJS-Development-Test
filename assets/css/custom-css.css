@@ -1,0 +1,163 @@
+html,body,container-fluid{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+body{
+    background: url(../images/bg01.jpg)repeat center center;
+    background-size: cover;
+     height: 100%; 
+     width:100%;
+     min-width:100%;
+	 line-height:20px;
+}
+.marginTop10{
+    margin-top:10%;
+}
+.marginTop5{
+    margin-top:5%;
+}
+.marginLeft30{
+    margin-left:30%;
+}
+input[type=text] {
+    width: 230px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(255,255,255,0.5);
+    background-image: url('../images/searchIcon.png');
+
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+	border:3px solid #28a745;
+	box-shadow:0 0 10px #28a745;
+}
+.avatarImg{
+	width:80%;
+	height:300px;
+	border: 2px solid #408c11;
+	box-shadow:0 0 20px rgba(0,0,0,0.7);
+}
+.detailsTextContainer{
+	background-color: rgba(0,0,0,0.4);
+	border: 2px solid #408c11;
+	box-shadow:0 0 20px rgba(0,0,0,0.7);
+}
+.detailsText{
+	color:#fff;
+}
+.detailsTextMarginLeft{
+	margin-left:8%;
+}
+.followerAvatar{
+	width:30px;
+	height:30px;
+}
+.actionButtons{
+	 font-weight: bold;
+    cursor: pointer;
+    margin: 0px 0px;
+    width: 200px;
+    height: 60px;
+    padding: 15px 21px !important;
+    display: inline-block;
+   border: 1px solid #408c11;
+    color: white!important;
+    font-size: 0.90em;
+    font-weight: normal;
+    line-height: 2em;
+    text-decoration: none;
+    position: relative;
+    -webkit-appearance: none;
+    text-align: center;
+    transition-property: all;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    text-transform: capitalize;
+    border-radius: 1px;
+    letter-spacing: 0.1em;
+    background: -webkit-linear-gradient(#86cd5a, #4e9422)!important;
+    background: -o-linear-gradient(#86cd5a, #4e9422)!important;
+    background: -moz-linear-gradient(#86cd5a, #4e9422)!important;
+    background: linear-gradient(#86cd5a, #4e9422)!important;
+}
+.actionButtons:hover{
+	  background: -webkit-linear-gradient(#4e9422, #86cd5a)!important;
+    background: -o-linear-gradient(#4e9422, #86cd5a)!important;
+    background: -moz-linear-gradient(#4e9422, #86cd5a)!important;
+    background: linear-gradient(#4e9422, #86cd5a)!important;
+}
+
+	.adjsutModalHeaderWidth{
+			width: 100.5% !important;
+		margin-left: -0.3% !important;
+		}
+		.modalCloseBtn{
+			float: right;
+			font-size: 24px;
+			cursor:pointer;margin-top: -2%;
+		}
+        .intro,.intro:hover,.intro:focus{
+          background-color:#cccccc!important;
+        }
+        .clr,.clr:hover,.clr:focus {
+             color:#000 !important;
+        }
+
+        .data {
+            padding-top: 0px;
+            padding-right: 22px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+        }
+		
+		 .heads {
+            padding-top: 5px;
+            padding-right: 22px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+        }
+		.close,.close:active,.close:hover,.close:focus{color:#000 !important}
+        .modal{
+            height:550px !important;
+            
+        }
+		.modalTopMargin{
+            top:0% !important;
+		margin-top:10% !important;
+           margin-left: -0.5% !important;
+		}
+        .modalOuterDiaog{
+			background-color: transparent !important;
+			border: none !important;
+			box-shadow: none !important;
+			overflow: hidden !important;
+        }
+        .modalBtn{    width: 70px;
+			height: 30px;
+			border: none;
+		}
+        .modalBorderRadius{border-radius: 0px !important;}
+	  .modal-backdrop {
+			/*filter:blur(2020px);*/
+			background-color: transparent !important;
+		}
+
+    body.modal-open .background-container {
+        -webkit-filter: blur(15px);
+        -moz-filter: blur(15px);
+        -ms-filter: blur(15px);
+        filter: blur(15px);
+    }
+

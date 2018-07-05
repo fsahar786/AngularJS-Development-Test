@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Angular Development Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom-css.css">
+</head>
+<body>
+<div ng-app = "mainApp" ng-controller = "testController" class="background-container">
+    <div class="container-fluid">
+       <div class="row" id="searchDiv">
+            <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2 marginTop10"> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8 marginTop10" align="center"> 
+               <form action="/action_page.php"> 
+                        <input type="text" id="searchText" ng-model="searchText" placeholder="Search" name="search"> 
+                        <br /><br /><br />
+                       
+                            <button class="btn btn-success actionButtons" type="button" ng-click="submitSearch()">Search</button> 
+                       
+                </form> 
+				</div> 
+             <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2 marginTop10"> 
+            </div> 
+       </div> 
+		<div class="row" id="detailsDiv">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				<div class="row">
+					<div class="col-lg-12" align="right"><br/><br/>
+						<input type="button" value="Back To Search" ng-click="BackToSearch()" class="btn btn-success marginTop5 actionButtons"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12" align="left">
+						<div class="row marginTop5">
+							<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+								<img src="{{searchResult[0].avatar}}" class="avatarImg img-thumbnail" title="avatar"/>
+							</div>
+							
+							<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 detailsTextContainer table-responsive">
+								<label class="detailsText">UserName:</label>
+								<span class="detailsText"> &nbsp;{{searchResult[0].UserName}}</span><br/>
+								
+								<label class="detailsText">Email:</label>
+								<span class="detailsText detailsTextMarginLeft">{{searchResult[0].email}}</span>
+								<br/><br/>
+								<table class="table">
+									<thead>
+										<tr>
+											<td class="detailsText">Follower's Name</td>
+											<td class="detailsText">Follower's Avatar</td>
+										</tr>
+									</thead>
+									<tr>
+										<td class="detailsText">Name</td>
+										<td>
+											<img src="assets/images/searchIcon.png" class="followerAvatar img-thumbnail" alt="followerAvatar"/>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			</div>
+		</div>
+        
+    </div>
+</div>
+
+<div class="modal fade modalOuterDiaog modalTopMargin" id="alertModal" role="dialog">
+				<div class="modal-dialog" style="width:450px">
+
+					<!-- Modal content-->
+					<div class="modal-content modalBorderRadius">
+
+						<div class="modal-header intro heads adjsutModalHeaderWidth" style="height:35px">
+						<h4 class="modal-title data" style="font-size:16px"><span class="clr">Error</span> </h4>
+							<span class="modalCloseBtn clr" data-dismiss="modal"><span class="clr">&times;</span> </span>
+							
+
+						</div>
+
+						<div class="modal-body data" style="height:100px ; font-size:14px">
+							<div class="left"><label style="margin-top:10px;">Sorry! User that you have searched is not found.</label></div>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="modalBtn intro" data-dismiss="modal"><span class="clr">Ok</span> </button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+<script src="assets/scripts/jquery-3.3.1.min.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="assets/scripts/testJs.js"></script>
+
+</body>
+</html>
